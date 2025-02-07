@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { motion } from "motion/react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -24,29 +25,53 @@ export default function Index() {
         {/* conteudo principal do seu portfolio */}
         <section
           id="hero"
-          className="h-screen flex flex-col gap-4 items-center justify-center sm:flex-row sm:gap-16"
+          className="h-[calc(100vh-56px)] flex flex-col items-center justify-center sm:gap-16"
         >
-          {/* troque por uma foto de sua preferencia e descreva sobre voce*/}
-          <div>
-            <h1 className="text-6xl">Hello World.</h1>
-            <h1 className="text-4xl">
-              I'm{" "}
-              <span className="font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
-                Tifany.
+          {/* Container do conteúdo */}
+          <div className="flex flex-col sm:flex-row gap-4 items-center">
+            <div>
+              <h1 className="text-6xl">Hello World.</h1>
+              <h1 className="text-4xl">
+                I'm{" "}
+                <span className="font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+                  Tifany.
+                </span>
+              </h1>
+              <span className="text-gray-400">
+                Web Designer | Front-End Developer
               </span>
-            </h1>
-            <span className="text-gray-400">
-              Web Designer | Front-End Developer
-            </span>
-            <p className="text-gray-400 w-96 mt-4">
-              Uma <b>Software Engineer</b> com foco no <b>Front-End</b>.
-              Buscando sempre desenvolver telas robustas e responsivas. Sinto-me
-              confortável projetando meus próprios designs e aplicando-os na
-              prática durante o desenvolvimento.
-            </p>
+              <p className="text-gray-400 w-96 mt-4">
+                Uma <b>Software Engineer</b> com foco no <b>Front-End</b>.
+                Buscando sempre desenvolver telas robustas e responsivas.
+                Sinto-me confortável projetando meus próprios designs e
+                aplicando-os na prática durante o desenvolvimento.
+              </p>
+            </div>
+            <img src="/yourProfilePic.jpg" className="rounded-full" />
           </div>
 
-          <img src="/yourProfilePic.jpg" className="rounded-full" />
+          {/* elemento decorativo */}
+          <motion.div
+            className="mt-8 flex flex-col items-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8, duration: 0.6 }}
+          >
+            <div className="w-1 h-12 bg-gradient-to-b from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 rounded-full animate-pulse"></div>
+          </motion.div>
+        </section>
+
+        {/* sessao de skills e experiencia */}
+        <section
+          id="skills"
+          className="flex items-center justify-center h-screen"
+        >
+          <h1>Habilidades e experiência</h1>
+        </section>
+
+        {/* sessao onde voce vai descrever sobre seus projetos */}
+        <section id="projects" className=" flex items-center justify-center">
+          <h1>Projetos</h1>
         </section>
       </div>
     </div>
