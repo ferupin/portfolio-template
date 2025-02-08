@@ -18,7 +18,7 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative">
       {/* background */}
       <div className="pointer-events-none fixed inset-0">
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
@@ -30,7 +30,7 @@ export default function Index() {
         {/* conteudo principal do seu portfolio */}
         <section
           id="hero"
-          className="h-[calc(100vh-56px)] flex flex-col items-center justify-center sm:gap-16"
+          className="h-screen flex flex-col items-center justify-center gap-16"
         >
           <div className="flex flex-col sm:flex-row gap-4 items-center">
             <div>
@@ -48,11 +48,7 @@ export default function Index() {
                 </h1>
               </motion.div>
 
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5, duration: 0.8 }}
-              >
+              <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
                 {/* insira suas informacoes aqui */}
                 <span className="text-gray-400">
                   Web Designer | Front-End Developer
@@ -95,7 +91,7 @@ export default function Index() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <h1 className="text-4xl">Habilidades e experiência</h1>
+          <h1 className="text-4xl text-center">Habilidades e experiência</h1>
 
           <div className="flex flex-col gap-28">
             {/* componente de skills */}
@@ -107,14 +103,16 @@ export default function Index() {
         </motion.section>
 
         {/* sessao onde voce vai descrever sobre seus projetos altere seus projetos no componente de projects.tsx */}
-        <section
+        <motion.section
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           id="projects"
           className="mt-20 flex flex-col items-center justify-center"
         >
           <h1 className="text-4xl">Projetos</h1>
 
           <Projects />
-        </section>
+        </motion.section>
       </div>
     </div>
   );
