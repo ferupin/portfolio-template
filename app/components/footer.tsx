@@ -6,27 +6,28 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <div className="container my-4 mx-auto flex flex-row justify-between text-gray-400">
-      <div className="text-sm flex gap-2 items-center">
+    <div className="container mx-auto my-4 flex flex-col items-center gap-3 text-gray-400 md:flex-row md:justify-between md:gap-0">
+      <div className="text-sm flex gap-2 items-center text-center">
         &copy; {year} Todos os direitos reservados. Feito com{" "}
         <FaHeart className="text-purple-500" /> por Tifany Nunes
       </div>
 
-      <div className="flex flex-row gap-4">
+      {/* suas redes sociais */}
+      <div className="flex gap-4">
         <Link
-          to={"https://x.com/pinuyami"}
+          to="https://x.com/pinuyami"
           target="_blank"
-          className="hover:text-purple-500"
+          className="hover:text-purple-500 transition-colors"
         >
-          <FaXTwitter />
+          <FaXTwitter size={20} />
         </Link>
 
         <Link
-          to={"https://www.linkedin.com/in/tifanyanunes/"}
+          to="https://www.linkedin.com/in/tifanyanunes/"
           target="_blank"
-          className="hover:text-purple-500"
+          className="hover:text-purple-500 transition-colors"
         >
-          <FaLinkedin />
+          <FaLinkedin size={20} />
         </Link>
       </div>
     </div>

@@ -17,7 +17,7 @@ const projects: Project[] = [
     description:
       "Projeto pessoal e template open-source, utilizando Remix e TailwindCSS.", // breve descricao do seu projeto
     imageUrl: "/assests/portfolioImage.png", // imagem de banner do seu projeto, recomendo que coloque na pasta /assets/ na pasta public
-    liveUrl: "https://example.com/ecommerce", // link do seu site deployado (se n houver pode deletar a linha)
+    liveUrl: "https://portfolio-pinuya.vercel.app/", // link do seu site deployado (se n houver pode deletar a linha)
     repoUrl: "https://github.com/pinuya/portfolio-template", // link do seu rep
   },
   {
