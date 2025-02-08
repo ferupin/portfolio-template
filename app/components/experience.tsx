@@ -1,20 +1,20 @@
 import { MdWork } from "react-icons/md";
 
-// insira seus dados de experiencia aqui, caso nao tenha basta comentar o componente no arquivo _index.tsx
+// insira seus dados de experiencia aqui, caso nao tenha basta comentar o componente no arquivo _index.tsx ou excluir esse componente
 const experiences = [
   {
     company: "Hubfy",
     period: "Out 2024 - Presente",
     role: "Front-End Engineer",
     description:
-      "Desenvolvendo Front-End com tailwind, react em uma aplicacao em next",
+      "Desenvolvendo Front-End com Tailwind, React em uma aplicação Next.js.",
   },
   {
-    company: "Autonoma",
+    company: "Autônoma",
     period: "Jan 2022 - Presente",
     role: "Software Engineer",
     description:
-      "Como Desenvolvedora Fullstack autonoma aplicava uma ampla gama de tecnologias para criar soluções web robustas e escaláveis. Utilizando conhecimentos em back-end e front-end.",
+      "Como Desenvolvedora Fullstack autônoma, aplicava uma ampla gama de tecnologias para criar soluções web robustas e escaláveis, utilizando conhecimentos tanto em back-end quanto em front-end.",
   },
   {
     company: "Centro Universitário Vale do Salgado",

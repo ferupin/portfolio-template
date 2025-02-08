@@ -1,7 +1,9 @@
 import type { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
 import { motion } from "motion/react";
+import { MdArrowOutward } from "react-icons/md";
 import Experience from "~/components/experience";
+import Projects from "~/components/projects";
 import Skills from "~/components/skills";
 
 export const meta: MetaFunction = () => {
@@ -84,10 +86,14 @@ export default function Index() {
           </motion.div>
         </section>
 
-        {/* sessao de skills e experiencia altere para suas skills e experiencia va no componente skills */}
-        <section
+        {/* sessao de skills e experiencia altere para suas skills e experiencia no componente skills.tsx e experience.tsx*/}
+        <motion.section
           id="skills"
           className="flex flex-col items-center justify-center gap-10"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
         >
           <h1 className="text-4xl">Habilidades e experiência</h1>
 
@@ -98,12 +104,17 @@ export default function Index() {
             {/* componente de experiencia */}
             <Experience />
           </div>
-        </section>
+        </motion.section>
 
-        {/* sessao onde voce vai descrever sobre seus projetos */}
-        {/* <section id="projects" className=" flex items-center justify-center">
-          <h1>Projetos</h1>
-        </section> */}
+        {/* sessao onde voce vai descrever sobre seus projetos altere seus projetos no componente de projects.tsx */}
+        <section
+          id="projects"
+          className="mt-20 flex flex-col items-center justify-center"
+        >
+          <h1 className="text-4xl">Projetos</h1>
+
+          <Projects />
+        </section>
       </div>
     </div>
   );
