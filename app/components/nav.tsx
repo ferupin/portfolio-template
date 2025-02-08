@@ -9,7 +9,7 @@ const menuItems = [
 
 export function Nav() {
   return (
-    <div className="container p-4 flex justify-between items-center mx-auto">
+    <div className="container p-4 flex justify-between items-center mx-auto mb-4">
       <ul className="space-x-6 flex">
         {menuItems.map((item) => (
           <li key={item.name}>

@@ -1,7 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
-import { Link } from "@remix-run/react";
 import { motion } from "motion/react";
-import { MdArrowOutward } from "react-icons/md";
 import Experience from "~/components/experience";
 import Projects from "~/components/projects";
 import Skills from "~/components/skills";
@@ -26,7 +24,7 @@ export default function Index() {
         <div className="absolute bottom-0 left-0 h-[500px] w-[500px] bg-purple-500/10 blur-[100px]" />
       </div>
 
-      <div className="relative z-10 ">
+      <div className="relative z-10">
         {/* conteudo principal do seu portfolio */}
         <section
           id="hero"
@@ -73,7 +71,7 @@ export default function Index() {
 
           {/* elemento decorativo */}
           <motion.div
-            className="mt-8 flex flex-col items-center"
+            className="p-10 flex flex-col items-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 0.6 }}
@@ -85,7 +83,7 @@ export default function Index() {
         {/* sessao de skills e experiencia altere para suas skills e experiencia no componente skills.tsx e experience.tsx*/}
         <motion.section
           id="skills"
-          className="flex flex-col items-center justify-center gap-10"
+          className=" flex flex-col items-center justify-center gap-10"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}

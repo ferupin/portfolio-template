@@ -36,8 +36,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body className="font-dmSans">
         <Nav />
-        <MouseMoveEffect />
         {children}
+        <MouseMoveEffect />
         <ScrollRestoration />
         <Scripts />
         <Footer />
