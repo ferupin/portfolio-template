@@ -28,7 +28,7 @@ export default function Index() {
         {/* conteudo principal do seu portfolio */}
         <section
           id="hero"
-          className="h-screen flex flex-col items-center justify-center gap-16"
+          className="h-screen flex flex-col items-center justify-center gap-16 pt-20"
         >
           <div className="flex flex-col sm:flex-row gap-4 items-center">
             <div>
@@ -71,7 +71,7 @@ export default function Index() {
 
           {/* elemento decorativo */}
           <motion.div
-            className="p-10 flex flex-col items-center"
+            className="p-20 flex flex-col items-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 0.6 }}
