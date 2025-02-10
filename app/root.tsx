@@ -34,7 +34,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="font-dmSans">
+      <body className="font-dmSans py-4">
         <Nav />
         {children}
         <MouseMoveEffect />

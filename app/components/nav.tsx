@@ -10,8 +10,8 @@ const menuItems = [
 export function Nav() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
-      <nav className="container p-4 flex justify-between items-center mx-auto mb-4">
-        <ul className="space-x-6 flex">
+      <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <ul className="hidden space-x-6 sm:flex">
           {menuItems.map((item) => (
             <li key={item.name}>
               <Link to={item.href}>
@@ -25,7 +25,7 @@ export function Nav() {
         </ul>
 
         <Link to={"https://github.com/pinuya"}>
-          <FaGithub className="cursor-pointer hover:text-purple-500 h-5 w-5" />
+          <FaGithub className="cursor-pointer hover:text-purple-500 h-5 w-5 hidden sm:block" />
         </Link>
       </nav>
     </header>
