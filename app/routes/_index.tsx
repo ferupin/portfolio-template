@@ -24,11 +24,11 @@ export default function Index() {
         <div className="absolute bottom-0 left-0 h-[500px] w-[500px] bg-purple-500/10 blur-[100px]" />
       </div>
 
-      <div className=" z-10">
+      <div className="z-10">
         {/* conteudo principal do seu portfolio */}
         <section
           id="hero"
-          className="h-screen flex flex-col items-center justify-center gap-16 pt-20"
+          className="h-screen flex flex-col items-center justify-center gap-16 py-20"
         >
           <div className="flex flex-col sm:flex-row gap-4 items-center">
             <div>
@@ -71,7 +71,7 @@ export default function Index() {
 
           {/* elemento decorativo */}
           <motion.div
-            className="p-20 flex flex-col items-center"
+            className="p-20 hidden flex-col items-center sm:block"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 0.6 }}
