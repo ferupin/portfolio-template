@@ -8,7 +8,6 @@ import {
 import type { LinksFunction } from "@remix-run/node";
 
 import "./tailwind.css";
-import MouseMoveEffect from "./components/mouse-move-effect";
 import { Nav } from "./components/nav";
 import { Footer } from "./components/footer";
 
@@ -37,7 +36,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <body className="font-dmSans py-4">
         <Nav />
         {children}
-        <MouseMoveEffect />
         <ScrollRestoration />
         <Scripts />
         <Footer />

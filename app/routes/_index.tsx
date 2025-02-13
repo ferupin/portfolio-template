@@ -3,6 +3,8 @@ import { motion } from "motion/react";
 import Experience from "~/components/experience";
 import Projects from "~/components/projects";
 import Skills from "~/components/skills";
+import { GlareCardDemo } from "~/components/profile-card";
+
 
 export const meta: MetaFunction = () => {
   return [
@@ -52,7 +54,7 @@ export default function Index() {
                   Web Designer | Front-End Developer
                 </span>
                 <p className="text-gray-400 w-96 mt-4">
-                  Uma <b>Software Engineer</b> com foco no <b>Front-End</b>.
+                  Um <b>Software Engineer</b> com foco no <b>Front-End</b>.
                   Buscando sempre desenvolver telas robustas e responsivas.
                   Sinto-me confortável projetando meus próprios designs e
                   aplicando-os na prática durante o desenvolvimento.
@@ -60,13 +62,8 @@ export default function Index() {
               </motion.div>
             </div>
 
-            <motion.img
-              src="/yourProfilePic.jpg"
-              className="rounded-full"
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.7, duration: 0.8 }}
-            />
+
+          <GlareCardDemo />
           </div>
 
           {/* elemento decorativo */}
