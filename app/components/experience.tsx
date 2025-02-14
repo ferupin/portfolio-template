@@ -22,10 +22,11 @@ export default function Experience() {
               <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
                 {exp.role}
               </span>
-
-              <p className="text-gray-400 mt-2 max-w-prose">
-                {exp.description}
-              </p>
+              <div className="max-w-3xl mx-auto px-4 text-left sm:text-justify ">
+                <p className="text-gray-400 mt-2 max-w-prose">
+                  {exp.description}
+                </p>
+              </div>
             </div>
 
             {index !== experiences.length - 1 && (

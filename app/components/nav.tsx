@@ -1,5 +1,4 @@
 import { Link } from "@remix-run/react";
-import { FaGithub } from "react-icons/fa";
 
 const menuItems = [
   { name: "Home", href: "/" },
@@ -23,10 +22,6 @@ export function Nav() {
             </li>
           ))}
         </ul>
-
-        <Link to={"https://github.com/ferupin"}>
-          <FaGithub className="cursor-pointer hover:text-purple-500 h-5 w-5 hidden sm:block" />
-        </Link>
       </nav>
     </header>
   );

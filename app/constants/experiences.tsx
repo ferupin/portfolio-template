@@ -1,24 +1,17 @@
 // insira seus dados de experiencia aqui, caso nao tenha basta comentar o componente no arquivo _index.tsx ou excluir esse componente
 export const experiences = [
   {
-    company: "Hubfy",
-    period: "Out 2024 - Presente",
-    role: "Front-End Engineer",
+    company: "Clia Empório",
+    period: "Abr 2023 - Set 2024",
+    role: "Desenvolvedor de Software",
     description:
-      "Desenvolvendo Front-End com Tailwind, React em uma aplicação Next.js.",
+      "Como Desenvolvedor, otimizei processos logísticos manuais, automatizando sistemas e integrando bases de dados (SQL Server) para unificar informações e gerar indicadores. Participei da migração de sistemas legados para infraestrutura moderna, implementando ferramentas de gestão que melhoraram a acessibilidade e centralização de dados, aumentando a eficiência e o controle operacional.",
   },
   {
-    company: "Autônoma",
-    period: "Jan 2022 - Presente",
-    role: "Software Engineer",
+    company: "Rede UNIFTC",
+    period: "Fev 2020 - Jun 2020",
+    role: "Estagiário em Desenvolvimento Web",
     description:
-      "Como Desenvolvedora Fullstack autônoma, aplicava uma ampla gama de tecnologias para criar soluções web robustas e escaláveis, utilizando conhecimentos tanto em back-end quanto em front-end.",
-  },
-  {
-    company: "Centro Universitário Vale do Salgado",
-    period: "Mar 2021 - Fev 2022",
-    role: "Desenvolvedora Front-End",
-    description:
-      "Como Estagiária em Desenvolvimento Front-end na UNIVS, estou começando a minha jornada na criação de interfaces web interativas e responsivas.",
+      "Como Estagiário contribui para a criação e manutenção de serviços web, atuando na migração de sistemas legados e no desenvolvimento de landing pages para campanhas e oportunidades. Realizei manutenções e atualizações em páginas baseadas na plataforma WordPress, garantindo funcionalidade e compatibilidade contínuas.",
   },
 ];

@@ -43,7 +43,7 @@ export default function Index() {
                 <h1 className="text-4xl">
                   I'm{" "}
                   <span className="font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-                    Tifany.
+                    Felipe.
                   </span>
                 </h1>
               </motion.div>
@@ -61,9 +61,7 @@ export default function Index() {
                 </p>
               </motion.div>
             </div>
-
-
-          <GlareCardDemo />
+            <GlareCardDemo />
           </div>
 
           {/* elemento decorativo */}

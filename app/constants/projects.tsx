@@ -17,22 +17,4 @@ export const projects: ProjectI[] = [
         liveUrl: "https://portfolio-pinuya.vercel.app/", // link do seu site deployado (se n houver pode deletar a linha)
         repoUrl: "https://github.com/pinuya/portfolio-template", // link do seu rep
     },
-    {
-        title: "Sylvanian Families Store",
-        description:
-            "Projeto em desenvolvimento, uma lojinha de e-commerce de Sylvanian Families.",
-
-        imageUrl: "/assests/sylvanianStore.png",
-        liveUrl: "https://github.com/pinuya",
-        repoUrl: "https://github.com/pinuya",
-    },
-    {
-        title: "TicTacToe",
-        description:
-            "Projeto que refatorei recentemente de um jogo da velha para jogar com amigos.",
-
-        imageUrl: "/assests/ticTacToe.png",
-        liveUrl: "https://pinuya.github.io/tic-tac-toe/",
-        repoUrl: "https://github.com/pinuya/tic-tac-toe",
-    },
 ];
