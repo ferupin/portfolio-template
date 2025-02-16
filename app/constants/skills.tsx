@@ -34,8 +34,8 @@ export const skills: SkillsI[] = [
     {
         title: "Backend",
         skills: [
-            { name: "Node.js", icon: NodeJs },
             { name: "PHP", icon: PHP },
+            { name: "Node.js", icon: NodeJs },
             { name: "Supabase", icon: Supabase },
             { name: "SQL", icon: Sql },
             { name: "MongoDB", icon: Database },
