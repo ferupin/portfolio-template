@@ -1,9 +1,8 @@
-import React from "react";
-import { skills, SkillI } from "../constants/skills";
-
+import React from 'react'
+import { skills, SkillI } from '../constants/skills'
 
 const SkillIcon = ({ skill }: { skill: SkillI }) => {
-  const [showTooltip, setShowTooltip] = React.useState(false);
+  const [showTooltip, setShowTooltip] = React.useState(false)
 
   return (
     <div className="relative inline-block">
@@ -21,32 +20,34 @@ const SkillIcon = ({ skill }: { skill: SkillI }) => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
 const SkillCategory = ({
   title,
   skills,
 }: {
-  title: string;
-  skills: SkillI[];
+  title: string
+  skills: SkillI[]
 }) => (
   <div className="flex items-center flex-col">
     <h3 className="text-lg font-semibold">{title}</h3>
     <div className="p-4">
       <div className="flex flex-wrap gap-4">
-        {skills.map((skill) => (
+        {skills.map(skill => (
           <SkillIcon key={skill.name} skill={skill} />
         ))}
       </div>
     </div>
   </div>
-);
+)
 
 export default function Skills() {
   return (
     <div className="grid gap-6 md:grid-cols-2">
-      {skills.map(skill => <SkillCategory title={skill.title} skills={skill.skills} />)}
+      {skills.map(skill => (
+        <SkillCategory title={skill.title} skills={skill.skills} />
+      ))}
     </div>
-  );
+  )
 }

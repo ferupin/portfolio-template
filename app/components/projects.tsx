@@ -1,11 +1,11 @@
-import type React from "react";
-import { projects, ProjectI } from "../constants/projects";
+import type React from 'react'
+import { projects, ProjectI } from '../constants/projects'
 
 const ProjectCard: React.FC<{ project: ProjectI }> = ({ project }) => {
   return (
     <div className="bg-gray-800/50 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-2">
       <img
-        src={project.imageUrl || "/placeholder.svg"}
+        src={project.imageUrl || '/placeholder.svg'}
         alt={project.title}
         className="w-full h-48 object-cover"
       />
@@ -39,8 +39,8 @@ const ProjectCard: React.FC<{ project: ProjectI }> = ({ project }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export const Projects: React.FC = () => {
   return (
@@ -53,7 +53,7 @@ export const Projects: React.FC = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

@@ -1,20 +1,19 @@
-import type { MetaFunction } from "@remix-run/node";
-import { motion } from "motion/react";
-import Experience from "~/components/experience";
-import Projects from "~/components/projects";
-import Skills from "~/components/skills";
-import { GlareCardDemo } from "~/components/profile-card";
-
+import type { MetaFunction } from '@remix-run/node'
+import { motion } from 'motion/react'
+import Experience from '~/components/experience'
+import Projects from '~/components/projects'
+import Skills from '~/components/skills'
+import { GlareCardDemo } from '~/components/profile-card'
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Portfolio" }, // coloque seu nome se quiser
+    { title: 'Portfolio' }, // coloque seu nome se quiser
     {
-      name: "Portfolio",
-      content: "Bem-vindos ao meu portfolio construido em Remix.",
+      name: 'Portfolio',
+      content: 'Bem-vindos ao meu portfolio construido em Remix.',
     },
-  ];
-};
+  ]
+}
 
 export default function Index() {
   return (
@@ -41,7 +40,7 @@ export default function Index() {
               >
                 <h1 className="text-6xl">Hello World.</h1>
                 <h1 className="text-4xl">
-                  I'm{" "}
+                  I'm{' '}
                   <span className="font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
                     Felipe.
                   </span>
@@ -81,7 +80,7 @@ export default function Index() {
           className=" flex flex-col items-center justify-center gap-10"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
           viewport={{ once: true }}
         >
           <h1 className="text-4xl text-center">Habilidades e experiência</h1>
@@ -108,5 +107,5 @@ export default function Index() {
         </motion.section>
       </div>
     </div>
-  );
+  )
 }
