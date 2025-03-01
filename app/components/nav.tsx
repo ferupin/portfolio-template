@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from '@remix-run/react'
 import { Menu, X } from 'lucide-react'
+import LogoBranding from './logo-branding'
 
 const menuItems = [
   { name: 'Home', href: '/' },
@@ -29,13 +30,8 @@ export function Nav() {
           </button>
 
           {/* Desktop Menu */}
+            <LogoBranding />
           <ul className="hidden space-x-6 sm:flex">
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text transition-all duration-300 hover:from-pink-500 hover:via-purple-500 hover:to-blue-500">
-              <Link 
-                to='http://localhost:5173'>
-                  Ferupin
-              </Link>
-            </span>
             {menuItems.map(item => (
               <li key={item.name}>
                 <Link to={item.href}>

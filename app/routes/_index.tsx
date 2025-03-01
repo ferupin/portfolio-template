@@ -4,6 +4,7 @@ import Experience from '~/components/experience'
 import Projects from '~/components/projects'
 import Skills from '~/components/skills'
 import { GlareCardDemo } from '~/components/profile-card'
+import TypingAnimation from '~/components/ui/typing-animation'
 
 export const meta: MetaFunction = () => {
   return [
@@ -21,8 +22,8 @@ export default function Index() {
       {/* background */}
       <div className="pointer-events-none fixed inset-0">
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
-        <div className="absolute right-0 top-0 h-[500px] w-[500px] bg-blue-500/10 blur-[100px]" />
-        <div className="absolute bottom-0 left-0 h-[500px] w-[500px] bg-purple-500/10 blur-[100px]" />
+        <div className="absolute right-0 top-0 h-[500px] w-[500px] bg-[#BC8BE0]/10 blur-[100px]" />
+        <div className="absolute bottom-0 left-0 h-[500px] w-[500px] bg-[#FA7894]/10 blur-[100px]" />
       </div>
 
       <div className="flex flex-col min-h-[100dvh] z-10">
@@ -38,7 +39,7 @@ export default function Index() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
               >
-                <h1 className="text-6xl">Hello World.</h1>
+                <h1 className="text-6xl"><TypingAnimation /></h1>
                 <h1 className="text-4xl">
                   I'm{' '}
                   <span className="font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
@@ -50,13 +51,10 @@ export default function Index() {
               <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
                 {/* insira suas informacoes aqui */}
                 <span className="text-gray-400">
-                  Web Designer | Front-End Developer
+                  Web Designer | Full-Stack Developer
                 </span>
                 <p className="text-gray-400 w-96 mt-4">
-                  Um <b>Software Engineer</b> com foco no <b>Front-End</b>.
-                  Buscando sempre desenvolver telas robustas e responsivas.
-                  Sinto-me confortável projetando meus próprios designs e
-                  aplicando-os na prática durante o desenvolvimento.
+                  Um <b>Software Developer</b> com foco em desenvolver aplicações escaláveis, tentando trilhar um caminho pela área de tecnologia visando a evolução contínua e almejando sempre o topo.
                 </p>
               </motion.div>
             </div>

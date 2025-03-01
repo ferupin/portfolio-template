@@ -1,8 +1,6 @@
 import { FaHtml5 as Html, FaNodeJs as NodeJs } from 'react-icons/fa6'
-import {
-  IoLogoJavascript as Javascript,
-  IoLogoCss3 as CssIcon,
-} from 'react-icons/io'
+import { IoLogoCss3 as CssIcon} from 'react-icons/io'
+import { IoLogoJavascript as Javascript } from "react-icons/io5";
 import { DiMongodb as Database } from 'react-icons/di'
 import { FaReact as ReactIcon } from 'react-icons/fa'
 import { SiNextdotjs as NextJs } from 'react-icons/si'
@@ -16,9 +14,9 @@ import {
   FaGitAlt as Git,
   FaDocker as Docker,
   FaCloud as CloudCog,
-  FaFigma as Figma,
-  FaPhp as PHP,
+  FaFigma as Figma
 } from 'react-icons/fa'
+import { RiPhpFill as Php } from "react-icons/ri";
 import { VscVscode as VsCode } from 'react-icons/vsc'
 import { html } from 'motion/react-client'
 
@@ -48,7 +46,7 @@ export const skills: SkillsI[] = [
   {
     title: 'Backend',
     skills: [
-      { name: 'PHP', icon: PHP },
+      { name: 'PHP', icon: Php },
       { name: 'Node.js', icon: NodeJs },
       { name: 'Supabase', icon: Supabase },
       { name: 'SQL', icon: Sql },

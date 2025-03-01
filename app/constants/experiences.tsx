@@ -1,5 +1,5 @@
-import { FaPhp as PHP } from "react-icons/fa6";
-import { IoLogoJavascript as JavaScript } from "react-icons/io";
+import { RiPhpFill as Php } from "react-icons/ri";
+import { IoLogoJavascript as Javascript } from "react-icons/io5";
 import { GrMysql as SQL } from 'react-icons/gr'
 import { FaWordpress as Wordpress } from "react-icons/fa";
 import { FaReact as ReactIcon } from 'react-icons/fa'
@@ -26,16 +26,16 @@ const tools: ToolsUsedI[] = [
   {
     title: 'Clia Empório',
     skills: [
-      { name: 'PHP', icon: PHP },
-      { name: 'JavaScript', icon: JavaScript },
+      { name: 'Php', icon: Php },
+      { name: 'Javascript', icon: Javascript },
       { name: 'SQL', icon: SQL },
     ],
   },
   {
     title: 'Rede UNIFTC',
     skills: [
-      { name: 'PHP', icon: PHP },
-      { name: 'JavaScript', icon: JavaScript },
+      { name: 'Php', icon: Php },
+      { name: 'Javascript', icon: Javascript },
       { name: 'React', icon: ReactIcon },
       { name: 'Wordpress', icon: Wordpress },
       { name: 'SQL', icon: SQL },      
