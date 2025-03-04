@@ -5,10 +5,11 @@ import Projects from '~/components/projects'
 import Skills from '~/components/skills'
 import { GlareCardDemo } from '~/components/profile-card'
 import TypingAnimation from '~/components/ui/typing-animation'
+import ScrollDownIndicator from '~/components/ui/scrolldown-indicator'
 
 export const meta: MetaFunction = () => {
   return [
-    { title: 'Portfolio' }, // coloque seu nome se quiser
+    { title: 'Ferupin' },
     {
       name: 'Portfolio',
       content: 'Bem-vindos ao meu portfolio construido em Remix.',
@@ -34,16 +35,17 @@ export default function Index() {
         >
           <div className="flex flex-col sm:flex-row gap-4 items-center">
             <div>
+            <TypingAnimation />
               <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
               >
-                <h1 className="text-6xl"><TypingAnimation /></h1>
+
                 <h1 className="text-4xl">
                   I'm{' '}
-                  <span className="font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-                    Felipe.
+                  <span className="font-bold bg-gradient-to-r  from-pink-400 to-rose-300 bg-clip-text text-transparent">
+                    Felipe de Matos.
                   </span>
                 </h1>
               </motion.div>
@@ -51,10 +53,10 @@ export default function Index() {
               <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
                 {/* insira suas informacoes aqui */}
                 <span className="text-gray-400">
-                  Web Designer | Full-Stack Developer
+                  Admin Salesforce | Full-Stack Developer
                 </span>
                 <p className="text-gray-400 w-96 mt-4">
-                  Um <b>Software Developer</b> com foco em desenvolver aplicações escaláveis, tentando trilhar um caminho pela área de tecnologia visando a evolução contínua e almejando sempre o topo.
+                  Um <b>Software Developer</b> tentando transformar ideias e sonhos em aplicações. Atualmente vivendo no Brasil, buscando manter a evolução sempre contínua.
                 </p>
               </motion.div>
             </div>
@@ -68,7 +70,7 @@ export default function Index() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 0.6 }}
           >
-            <div className="w-1 h-12 bg-gradient-to-b from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 rounded-full animate-pulse"></div>
+            <ScrollDownIndicator />
           </motion.div>
         </section>
 

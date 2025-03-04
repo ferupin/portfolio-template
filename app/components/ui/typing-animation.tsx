@@ -65,16 +65,18 @@ export default function TypingAnimation() {
   }, [displayText, isDeleting, currentPhraseIndex, typingSpeed])
 
   return (
-    <h1 className="text-6xl relative flex items-center">
-      <span>{displayText}</span>
-      <span className="inline-block w-1 h-12 bg-current animate-[pulse_1s_infinite]">
-        {/* Intentionally empty - the styling creates the cursor */}
-      </span>
-      {showFlag && (
-        <span className="ml-4 text-5xl opacity-100 transition-opacity duration-500">
-          {phrases[currentPhraseIndex].flag}
+    <div className="max-w-lg">
+      <h1 className="text-5xl flex flex-wrap items-center">
+        <span className="break-words">{displayText}</span>
+        <span className="inline-block w-1 h-12 bg-current animate-[pulse_1s_infinite]">
+          {/* Intentionally empty - the styling creates the cursor */}
         </span>
-      )}
-    </h1>
+        {showFlag && (
+          <span className="ml-4 text-2xl opacity-100 transition-opacity duration-500">
+            {phrases[currentPhraseIndex].flag}
+          </span>
+        )}
+      </h1>
+    </div>
   )
 }

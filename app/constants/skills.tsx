@@ -39,7 +39,6 @@ export const skills: SkillsI[] = [
       { name: 'JavaScript', icon: Javascript },
       { name: 'React', icon: ReactIcon },
       { name: 'Next.js', icon: NextJs },
-      { name: 'Remix', icon: Remix },
       { name: 'Tailwind CSS', icon: Tailwind },
     ],
   },

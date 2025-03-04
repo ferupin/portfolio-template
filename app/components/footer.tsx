@@ -8,8 +8,8 @@ export function Footer() {
   return (
     <div className="container mx-auto my-4 flex flex-col items-center gap-3 text-gray-400 md:flex-row md:justify-between md:gap-0">
       <div className="text-sm flex gap-2 items-center text-center">
-        &copy; {year} Feito com <FaHeart className="text-purple-500" /> por
-        Tifany Nunes
+        &copy; {year} Feito com <FaHeart className="text-pink-400" /> por
+        Felipe Matos
       </div>
 
       {/* suas redes sociais */}
